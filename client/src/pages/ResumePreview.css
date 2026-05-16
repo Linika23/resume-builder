@@ -1,0 +1,142 @@
+.preview-page {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  min-height: 100vh;
+}
+
+.preview-page__controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.preview-page__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Resume document styles — white paper look */
+.resume {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 24mm 20mm;
+  background: #ffffff;
+  color: #1a1a2e;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.55;
+  box-shadow: var(--shadow-lg);
+  border-radius: 4px;
+}
+
+.resume__header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #1a1a2e;
+}
+
+.resume__name {
+  font-size: 22pt;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.resume__contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  font-size: 9pt;
+  color: #444;
+}
+
+.resume__contact span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.resume__icon {
+  font-size: 11px;
+  color: #666;
+}
+
+.resume__section {
+  margin-bottom: 16px;
+}
+
+.resume__section-title {
+  font-size: 11pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1a1a2e;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+}
+
+.resume__entry {
+  margin-bottom: 12px;
+}
+
+.resume__entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.resume__entry-title {
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.resume__entry-company {
+  color: #444;
+}
+
+.resume__entry-dates {
+  font-size: 9pt;
+  color: #666;
+  white-space: nowrap;
+}
+
+.resume__entry-tech {
+  font-size: 9pt;
+  color: #666;
+}
+
+.resume__text {
+  color: #333;
+  margin-top: 4px;
+}
+
+.resume__bullets {
+  padding-left: 18px;
+  list-style: disc;
+  color: #333;
+}
+
+.resume__bullets li {
+  margin-bottom: 3px;
+  list-style: disc;
+}
+
+@media (max-width: 900px) {
+  .resume {
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
+    font-size: 9.5pt;
+  }
+
+  .preview-page__controls {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

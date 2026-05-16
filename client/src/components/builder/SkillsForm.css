@@ -1,0 +1,29 @@
+.skills-preview {
+  margin-top: 24px;
+}
+
+.skills-preview__label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.skills-preview__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills-preview__tag {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(108, 99, 255, 0.1);
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--accent-light);
+  animation: fadeInUp 0.3s ease forwards;
+}

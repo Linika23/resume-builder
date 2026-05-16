@@ -1,0 +1,83 @@
+.step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 720px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+.step-indicator__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.step-indicator__circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  color: var(--text-muted);
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.step-indicator__circle--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.step-indicator__circle--done {
+  background: var(--success);
+  border-color: var(--success);
+  color: #fff;
+}
+
+.step-indicator__label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+  transition: var(--transition-fast);
+}
+
+.step-indicator__label--active {
+  color: var(--text-primary);
+}
+
+.step-indicator__line {
+  width: 32px;
+  height: 2px;
+  background: var(--border);
+  margin: 0 4px;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.step-indicator__line--done {
+  background: var(--success);
+}
+
+@media (max-width: 768px) {
+  .step-indicator__label {
+    display: none;
+  }
+  .step-indicator__line {
+    width: 20px;
+  }
+  .step-indicator__circle {
+    width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
+  }
+}

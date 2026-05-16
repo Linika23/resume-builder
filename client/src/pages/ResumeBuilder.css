@@ -1,0 +1,128 @@
+.builder {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  min-height: 100vh;
+}
+
+.builder__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.builder__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.builder__subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.builder__form {
+  max-width: 720px;
+  margin: 40px auto 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+}
+
+.builder__nav {
+  max-width: 720px;
+  margin: 24px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Form shared styles */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-grid--full {
+  grid-column: 1 / -1;
+}
+
+.form-section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-section-title svg {
+  color: var(--accent);
+}
+
+.dynamic-entry {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.dynamic-entry__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.dynamic-entry__number {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-light);
+}
+
+.dynamic-entry__remove {
+  background: none;
+  color: var(--error);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+}
+
+.dynamic-entry__remove:hover {
+  background: rgba(248, 113, 113, 0.1);
+}
+
+.add-entry-btn {
+  width: 100%;
+  padding: 14px;
+  background: rgba(108, 99, 255, 0.06);
+  border: 1px dashed rgba(108, 99, 255, 0.3);
+  border-radius: var(--radius);
+  color: var(--accent-light);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.add-entry-btn:hover {
+  background: rgba(108, 99, 255, 0.12);
+  border-color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .builder__form {
+    padding: 24px 16px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
